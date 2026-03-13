@@ -1,9 +1,50 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guilda</title>
+    <title>Guilda de Aventureiros ⚔️</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Guilda de <span>Aventureiros</span></h1>
+        <p>Recrutamento e Treinamento</p>
+      </header>
+
+      <section class="recrutamento">
+        <form id="form-heroi">
+          <input type="text" id="input-nome" placeholder="Nome do Herói" />
+          <select id="select-classe">
+            <option value="Guerreiro">Guerreiro 🗡️</option>
+            <option value="Mago">Mago 🔮</option>
+            <option value="Arqueiro">Arqueiro 🏹</option>
+          </select>
+          <button type="submit">RECRUTAR HERÓI</button>
+        </form>
+      </section>
+
+      <main id="arena" class="escondido">
+        <div class="card-heroi">
+          <div class="status-heroi">
+            <h2 id="txt-nome">Nome</h2>
+            <span id="txt-classe" class="badge">Classe</span>
+          </div>
+
+          <div class="atributos">
+            <p>Nível: <strong id="txt-nivel">1</strong></p>
+            <p>XP: <strong id="txt-xp">0</strong> / 100</p>
+          </div>
+
+          <div class="barra-xp">
+            <div id="progresso-xp" style="width: 0%"></div>
+          </div>
+
+          <button id="btn-treinar" class="acao-btn">TREINAR (+25 XP)</button>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
