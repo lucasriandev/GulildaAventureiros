@@ -22,18 +22,15 @@ header {
   text-align: center;
   margin-bottom: 30px;
 }
-
 h1 {
   font-size: 28px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 h1 span {
   color: #eab308;
 }
-
 header p {
   color: #71717a;
   margin-top: 5px;
@@ -49,7 +46,6 @@ form {
   border: 1px solid #27272a;
   margin-bottom: 30px;
 }
-
 input,
 select {
   padding: 12px;
@@ -59,16 +55,11 @@ select {
   border-radius: 4px;
   outline: none;
   font-size: 16px;
-
-  &:hover {
-    border-color: #eab308;
-  }
-
-  &:focus {
-    border-color: #eab308;
-  }
 }
-
+input:focus,
+select:focus {
+  border-color: #eab308;
+}
 button {
   padding: 15px;
   background: #eab308;
@@ -79,80 +70,64 @@ button {
   cursor: pointer;
   transition: 0.2s;
   text-transform: uppercase;
+}
+button:hover {
+  background: #ca8a04;
+}
 
-  &:hover {
-    background: #ca8a04;
-  }
+.escondido {
+  display: none !important;
+}
 
-  button {
-    padding: 15px;
-    background: #eab308;
-    color: #000;
-    border: none;
-    font-weight: bold;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.2s;
-    text-transform: uppercase;
-  }
-  button:hover {
-    background: #ca8a04;
-  }
+.card-heroi {
+  background: #18181b;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #3f3f46;
+  text-align: center;
+}
+.status-heroi {
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.badge {
+  background: #27272a;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #eab308;
+}
 
-  .escondido {
-    display: none !important;
-  }
+.atributos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
 
-  .card-heroi {
-    background: #18181b;
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #3f3f46;
-    text-align: center;
-  }
-  .status-heroi {
-    margin-bottom: 20px;
-  }
-  h2 {
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 5px;
-  }
-  .badge {
-    background: #27272a;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    color: #eab308;
-  }
+.barra-xp {
+  width: 100%;
+  height: 10px;
+  background: #27272a;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+#progresso-xp {
+  height: 100%;
+  background: #3b82f6;
+  transition: width 0.3s ease;
+}
 
-  .atributos {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
-    font-size: 18px;
-  }
-
-  .barra-xp {
-    width: 100%;
-    height: 10px;
-    background: #27272a;
-    border-radius: 5px;
-    margin-bottom: 25px;
-    overflow: hidden;
-  }
-  #progresso-xp {
-    height: 100%;
-    background: #3b82f6;
-    transition: width 0.3s ease;
-  }
-
-  .acao-btn {
-    width: 100%;
-    background: #3b82f6;
-    color: white;
-  }
-  .acao-btn:hover {
-    background: #2563eb;
-  }
+.acao-btn {
+  width: 100%;
+  background: #3b82f6;
+  color: white;
+}
+.acao-btn:hover {
+  background: #2563eb;
 }
